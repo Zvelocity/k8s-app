@@ -3,11 +3,11 @@ kind: Application
 metadata:
   name: my-app
   namespace: argocd
-  spec:
-    project: default
-    source:
-      repoURL: https://github.com/Zvelocity/k8s-app.git
-      targetRevision: HEAD
-      path: argocd
-    destination:
-        server: https://kubernetes.default.svc
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Zvelocity/k8s-app.git
+    targetRevision: HEAD
+    path: argocd
+  destination:
+      server: https://kubernetes.default.svc
