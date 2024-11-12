@@ -9,12 +9,5 @@ metadata:
       repoURL: https://github.com/Zvelocity/k8s-app.git
       targetRevision: HEAD
       path: argocd
-      destination:
+    destination:
         server: https://kubernetes.default.svc
-        namespace: my-app
-        syncPolicy:
-          syncOptions:
-            - CreateNamespace=true
-            automated:
-              prune: true
-              selfHeal: true
