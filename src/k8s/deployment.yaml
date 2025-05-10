@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: k8s-app
-        image: 840997661122.dkr.ecr.us-east-2.amazonaws.com/test-repo:eb4d17c
+        image: 840997661122.dkr.ecr.us-east-2.amazonaws.com/test-repo:afba49b
         ports:
         - containerPort: 8080
         resources:
