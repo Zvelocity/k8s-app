@@ -46,7 +46,7 @@ func TestHealthCheckHandler(t *testing.T) {
 			status, http.StatusOK)
 	}
 
-	expected := `{"status":"ok"`
+	expected := `{"info":"service is healthy","status":"ok"}`
 	if !strings.Contains(rr.Body.String(), expected) {
 		t.Errorf("handler returned unexpected body: got %v want %v",
 			rr.Body.String(), expected)
