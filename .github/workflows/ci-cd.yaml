@@ -62,7 +62,7 @@ jobs:
       
       - name: Update Kubernetes manifests
         run: |
-          sed -i "s|image: .*|image: $ECR_REGISTRY/$ECR_REPOSITORY:${{ env.IMAGE_TAG }}|g" k8s/deployment.yaml
+          sed -i "s|image: .*|image: $ECR_REGISTRY/$ECR_REPOSITORY:${{ env.IMAGE_TAG }}|g" src/k8s/deployment.yaml
       
       - name: Commit and push updated manifests
         run: |
