@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: k8s-app
-        image: your-ecr-repo-uri:latest  # This will be updated by CI
+        image: 840997661122.dkr.ecr.us-east-2.amazonaws.com/test-repo:eb4d17c
         ports:
         - containerPort: 8080
         resources:
