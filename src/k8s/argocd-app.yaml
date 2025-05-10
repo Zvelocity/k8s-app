@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Zvelocity/k8s-app.git  
     targetRevision: HEAD  # Use main branch
-    path: k8s
+    path: src/k8s
   destination:
     server: https://kubernetes.default.svc  
     namespace: default  
